@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>Dr Batra's</title>
+    <!-- <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' /> -->
+    <!-- Pre Load -->
+    <link rel="preload" href="fonts/freesansbold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/warowniault-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Calibri.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Calibri Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="images/logo.jpg" as="image">
+    <style>
+        #preloader {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background: #ffffff;
+            z-index: 10;
+        }
+
+        .loader {
+            border: 5px solid #ec1f26;
+            border-radius: 50%;
+            border-top: 5px solid #0d74af;
+            border-bottom: 5px solid #0d74af;
+            width: 50px;
+            height: 50px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Loader -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="headerContainer clearfix">
+                <div class="phoneNumber text-center text-xl-left"><span>Call</span> <span>Now</span> <a
+                        href="tel:09833783779"><span>098337</span> <span>83779</span></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Banner Section  -->
+            <section class="banner">
+                <div id="demo"></div>
+                <script defer>
+                    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        document.write('<div class="mobileBanner"><video autoplay loop muted playsinline><source src="videos/banner-animation-mobile.mp4" type="video/mp4">Sorry, your browser doesn\' t support embedded videos.</video></div>');
+                    } else {
+                        document.write('<div class="desktopBanner"><video autoplay loop muted playsinline><source src="videos/banner-animation.mp4" type="video/mp4">Sorry, your browser doesn\'t support embedded videos.</video ></div> ');
+                    }
+                </script>
+                <div class="logo" data-aos="fade-in" data-aos-duration="1000">
+                    <a href="#">
+                        <picture>
+                            <source srcset="images/logo.webp" type="image/webp" media="(max-width: 200px)">
+                            <source srcset="images/logo.jpg" type="image/jpeg" media="(max-width: 200px)">
+                            <img data-src="images/logo.jpg" class="lazyload" alt="Dr Barta's" width="200" height="67">
+                        </picture>
+                    </a>
+                </div>
+
+            </section>
+            <!-- /Banner Section  -->
+
+            <!-- Contact Form -->
+            <section class="contactFormHolder" data-aos="fade-down" data-aos-duration="2000">
+                <div class="contactForm">
+                    <div class="formLogo">
+                        <picture>
+                            <source srcset="images/logo.webp" type="image/webp" media="(max-width: 170px)">
+                            <source srcset="images/logo.jpg" type="image/jpeg" media="(max-width: 170px)">
+                            <img data-src="images/logo.jpg" class="lazyload" alt="Dr Barta's" width="170" height="57">
+                        </picture>
+                    </div>
+                    <h2>CONSULT A HAIR DOCTOR FOR &#8377;199</h2>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" pattern="[a-zA-Z\s]+"
+                                title="Name should only contain letters." required>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 pr-0">
+                                <input type="number" class="form-control" id="mobile-prefix" placeholder="+91" required>
+                            </div>
+                            <div class="col-9">
+                                <input type="tel" class="form-control" id="mobile" name="phone" pattern="[0-9]{10}"
+                                    placeholder="Mobile" title="Please enter a valid mobile number." required>
+
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="conditions" required>
+                            <label class="form-check-label" for="conditions">I understand and accept the <a
+                                    href="#">terms and conditions</a>*.</label>
+                        </div>
+                        <div class="form-action">
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+            <!-- /Contact Form -->
+            <!-- Hair Consultation -->
+            <section class="hairConsultation">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-12 col-xl-3 text-center text-xl-left" data-aos="zoom-in"
+                            data-aos-duration="500">
+                            <h2>Hair Consultation Includes:</h2>
+                        </div>
+                        <div class="col-lg-6 col-xl-2" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="icon-box">
+                                <figure>
+                                    <img data-src="images/microscope.svg" class="lazyload"
+                                        alt="Video Hair Microscopic Test" width="55" height="55" />
+                                </figure>
+                                <div class="consultationText">Video Hair Microscopic Test</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-2" data-aos="zoom-in" data-aos-duration="1500">
+                            <div class="icon-box">
+                                <figure>
+                                    <img data-src="images/round-tick.svg" class="lazyload"
+                                        alt="FREE Session of US- FDA Approved Hair Treatment" width="55" height="55" />
+                                </figure>
+                                <div class="consultationText">FREE Session of US- FDA Approved Hair Treatment</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-2" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="icon-box">
+                                <figure>
+                                    <img data-src="images/doctor.svg" class="lazyload"
+                                        alt="30-40 minutes detailed hair consultation" width="55" height="55" />
+                                </figure>
+                                <div class="consultationText">30-40 minutes detailed hair consultation</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-2" data-aos="zoom-in" data-aos-duration="2500">
+                            <div class="icon-box">
+                                <figure>
+                                    <img data-src="images/prescription.svg" class="lazyload"
+                                        alt="Personalized Hair Treatment Plan Suiting your needs" width="55"
+                                        height="55" />
+                                </figure>
+                                <div class="consultationText">Personalized Hair Treatment Plan Suiting your needs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Hair Consultation -->
+            <!-- International Treatments  -->
+            <section class="internationalTreatments">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-xl-4" data-aos="fade-right" data-aos-offset="-500"
+                            data-aos-duration="1000">
+                            <h2>RESULTS OF OUR
+                                <span>INTERNATIONAL HAIR TREATMENTS</span>
+                            </h2>
+                        </div>
+                        <div class="col-lg-12 col-xl-8" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="sliderWrapper">
+                                <div class="hairSlider">
+                                    <div class="sliderItem">
+                                        <figure>
+                                            <img data-src="images/img-vitalizing-treatment.jpg" class="lazyload" alt=""
+                                                width="370" height="215" />
+                                        </figure>
+                                    </div>
+                                    <div class="sliderItem">
+                                        <figure>
+                                            <img data-src="images/img-grohair.jpg" class="lazyload" alt="" width="370"
+                                                height="215" />
+                                        </figure>
+                                    </div>
+                                    <div class="sliderItem">
+                                        <figure>
+                                            <img data-src="images/img-stm.jpg" class="lazyload" alt="" width="370"
+                                                height="215" />
+                                        </figure>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- /International Treatments -->
+
+            <!-- Special Offers -->
+            <section class="specialOffers">
+                <div class="container">
+                    <h2><span>Special Offers</span></h2>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 py-3" data-aos="flip-left" data-aos-duration="1000"
+                            data-aos-offset="-500">
+                            <div class=" card card-body h-100">
+                                <picture>
+                                    <a href="#hvtModal" data-toggle="modal" class="show-popup hvt">
+                                        <source srcset="images/offer-image-1.webp" type="image/webp"
+                                            media="(max-width: 410px)">
+                                        <source srcset="images/offer-image-1.jpg" type="image/jpeg"
+                                            media="(max-width: 410px)">
+                                        <img data-src="images/offer-image-1.jpg" class="lazyload" alt=" " width="410"
+                                            height="250">
+                                    </a>
+                                </picture>
+                                <h2 class="offerTitle"> US-FDA APPROVED<br /> HAIR TREATMENT </h2>
+                                <div class="offerBox">
+                                    <span class="fontSmall textGray">Get</span><br />
+                                    <span class="fontExtraBig">50%</span> <span class="fontBig">off</span><br />
+                                    <span class="fontMedium textGray">on 10 Sessions</span>
+                                </div>
+                                <div class="offerBtnHolder">
+                                    <a class="btn btn-primary" data-toggle="modal" href="#hvtModal">Get Offer
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 py-3" data-aos="flip-left" data-aos-duration="1500"
+                            data-aos-offset="-500">
+                            <div class="card card-body h-100">
+                                <picture>
+                                    <a href="#groModal" data-toggle="modal" class="show-popup">
+                                        <source srcset="images/offer-image-2.webp" type="image/webp"
+                                            media="(max-width: 410px)">
+                                        <source srcset="images/offer-image-2.jpg" type="image/jpeg"
+                                            media="(max-width: 410px)">
+                                        <img data-src="images/offer-image-2.jpg" class="lazyload" alt=" " width="410"
+                                            height="250">
+                                    </a>
+                                </picture>
+                                <h2 class="offerTitle"> FRENCH TECHNOLOGY<br /> HAIR TREATMENT </h2>
+                                <div class="offerBox text-center">
+                                    <span class="fontSmall textGray">Pay for 10 & Get</span><br />
+                                    <span class="fontBig textGray">10 </span><span class="fontMedium textGray">
+                                        Sessions</span><br />
+                                    <span class="fontExtraBig">FREE</span>
+                                </div>
+                                <div class="offerBtnHolder">
+                                    <a href="#groModal" data-toggle="modal" class="btn btn-primary show-popup">Get Offer
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 py-3" data-aos="flip-left" data-aos-duration="2000"
+                            data-aos-offset="-500">
+                            <div class="card card-body h-100">
+                                <picture>
+                                    <a href="#stmModal" data-toggle="modal" class="show-popup">
+                                        <source srcset="images/offer-image-3.webp" type="image/webp"
+                                            media="(max-width: 410px)">
+                                        <source srcset="images/offer-image-3.jpg" type="image/jpeg"
+                                            media="(max-width: 410px)">
+                                        <img data-src="images/offer-image-3.jpg" class="lazyload" alt=" " width="410"
+                                            height="250">
+                                    </a>
+                                </picture>
+                                <h2 class="offerTitle"> SOUTH KOREAN<br /> HAIR TREATMENT </h2>
+                                <div class="offerBox">
+                                    <span class="fontSmall textGray">Get</span><br />
+                                    <span class="fontExtraBig">30%</span> <span class="fontBig">off</span><br />
+                                    <span class="fontMedium textGray">on 10 Sessions</span>
+                                </div>
+                                <div class="offerBtnHolder">
+                                    <a href="#stmModal" data-toggle="modal" class="btn btn-primary show-popup">Get Offer
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- /Special Offers -->
+            <!-- Video Section -->
+            <section class="videoSection">
+                <div class="container">
+                    <h2><span>SCIENCE OF HAIR REGROWTH</span></h2>
+                    <div class="videoWrapper" data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500">
+                        <div class="youtube-video-place embed-responsive embed-responsive-16by9">
+                            <iframe id="existing-iframe-example" width="640" height="360" class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/omr0SyaGTe8?enablejsapi=1" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Video Section -->
+
+            <!-- Why Batra -->
+            <section class="whyBatra">
+                <div class="container">
+                    <h2><span>Why Dr Batra’s®</span></h2>
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="row">
+                                <div class="col-6" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="-500">
+                                    <div class="benefit-box">
+
+                                        <div class="frame">
+                                            <span class="helper"></span>
+                                            <img data-src="images/home.svg" class="lazyload" alt="Clinics" width="61"
+                                                height="61" />
+                                        </div>
+                                        <div class="benefitText">202 Clinics</div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-500">
+                                    <div class="benefit-box">
+                                        <div class="frame">
+                                            <span class="helper"></span>
+                                            <img data-src="images/globe.svg" class="lazyload" alt="Countries" width="70"
+                                                height="70" />
+                                        </div>
+                                        <div class="benefitText">7 Countries</div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="-500">
+                                    <div class="benefit-box">
+                                        <div class="frame">
+                                            <span class="helper"></span>
+                                            <img data-src="images/doctors.svg" class="lazyload" alt="Doctors" width="50"
+                                                height="31" />
+                                        </div>
+                                        <div class="benefitText">400+ Doctors</div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="-500">
+                                    <div class="benefit-box">
+                                        <div class="frame">
+                                            <span class="helper"></span>
+                                            <img data-src="images/people.svg" class="lazyload" alt="Patients" width="50"
+                                                height="26" />
+                                        </div>
+                                        <div class="benefitText">6,00,000 Happy Hair Patients</div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="-650">
+                                    <div class="benefit-box">
+                                        <div class="frame">
+                                            <span class="helper"></span>
+                                            <img data-src="images/tick-ten.svg" class="lazyload" alt="Results"
+                                                width="54" height="49" />
+                                        </div>
+                                        <div class="benefitText">Visible Results Within 10 weeks</div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="-650">
+                                    <div class="benefit-box">
+                                        <div class="frame">
+                                            <span class="helper"></span>
+                                            <img data-src="images/graph.svg" class="lazyload" alt="Long-Lasting Results"
+                                                width="50" height="40" />
+                                        </div>
+                                        <div class="benefitText">Long-Lasting Results</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6" data-aos="fade-left" data-aos-duration="2000"
+                            data-aos-offset="-600">
+                            <picture>
+                                <source srcset="images/img-dr-batra.webp" type="image/webp" media="(max-width: 781px)">
+                                <source srcset="images/img-dr-batra.png" type="image/png" media="(max-width: 781px)">
+                                <img data-src="images/img-dr-batra.png" class="lazyload" alt=" " width="781"
+                                    height="614">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Why Batra -->
+        </main>
+        <!-- /main -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-6">
+                        <div class="copyright text-center text-xl-left">
+                            &COPY; Copyright 2019 Cipla Inc. All rights reserved
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-6">
+                        <div class="footerLink text-center text-xl-right">
+                            <ul>
+                                <li><a href="#">Terms of services</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /Footer -->
+    </div>
+    <!-- /wrapper -->
+
+
+    <!-- Lead Form Popup -->
+
+
+    <div class="modal fade" id="hvtModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="lead-form-holder">
+                    <button type="button" class="form-close" data-dismiss="modal">X</button>
+                    <div class="lead-form-wrapper">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 bg-pop-lt">
+                                <div class="pop-lt">
+                                    <div class="pop-image"><img src="images/popup-logo-hvt.svg" alt="" width="355"
+                                            height="291" />
+                                    </div>
+
+                                    <h2>US- FDA approved treatment</h2>
+                                    <ul>
+                                        <li>Helps arrests active hair fall quickly</li>
+                                        <li>90% treatment results</li>
+                                        <li>Easy EMI Options available</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 bg-pop-rt">
+                                <div class="pop-rt">
+                                    <h2>Consult a Hair Doctor for &#8377;199</h2>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" pattern="[a-zA-Z\s]+"
+                                                title="Name should only contain letters." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Phone Number</label>
+                                            <input type="tel" class="form-control" id="mobile" name="phone"
+                                                pattern="[0-9]{10}" title="Please enter a valid mobile number."
+                                                required>
+                                        </div>
+                                        <div class="form-action">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="groModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="lead-form-holder">
+                    <button type="button" class="form-close" data-dismiss="modal">X</button>
+                    <div class="lead-form-wrapper">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 bg-pop-lt">
+                                <div class="pop-lt">
+                                    <div class="pop-image"><img src="images/popup-logo-gro.svg" alt="" width="385"
+                                            height="338" />
+                                    </div>
+
+                                    <h2>FRENCH TREATMENT</h2>
+                                    <ul>
+                                        <li>Improves hair volume and stimulates hair growth</li>
+                                        <li>77% Treatment Results</li>
+                                        <li>Easy EMI options available</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 bg-pop-rt">
+                                <div class="pop-rt">
+                                    <h2>Consult a Hair Doctor for &#8377;199</h2>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" pattern="[a-zA-Z\s]+"
+                                                title="Name should only contain letters." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Phone Number</label>
+                                            <input type="tel" class="form-control" id="mobile" name="phone"
+                                                pattern="[0-9]{10}" title="Please enter a valid mobile number."
+                                                required>
+                                        </div>
+                                        <div class="form-action">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="stmModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="lead-form-holder">
+                    <button type="button" class="form-close" data-dismiss="modal">X</button>
+                    <div class="lead-form-wrapper">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 bg-pop-lt">
+                                <div class="pop-lt">
+                                    <div class="pop-image"><img src="images/popup-logo-stm.svg" alt="" width="385"
+                                            height="361" />
+                                    </div>
+
+                                    <h2>SOUTH KOREAN TREATMENT</h2>
+                                    <ul>
+                                        <li>Repairs and Renews Hair Growth</li>
+                                        <li>88% Treatment Results</li>
+                                        <li>Easy EMI options available</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 bg-pop-rt">
+                                <div class="pop-rt">
+                                    <h2>Consult a Hair Doctor for &#8377;199</h2>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" pattern="[a-zA-Z\s]+"
+                                                title="Name should only contain letters." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Phone Number</label>
+                                            <input type="tel" class="form-control" id="mobile" name="phone"
+                                                pattern="[0-9]{10}" title="Please enter a valid mobile number."
+                                                required>
+                                        </div>
+                                        <div class="form-action">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- js -->
+    <script src="js/lazysizes.min.js" async></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#preloader").remove();
+
+        });
+    </script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/site.js"></script>
+    <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('existing-iframe-example', {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+        function onPlayerReady(event) {
+            document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
+        }
+
+        function onPlayerStateChange(event) {
+            changeBorderColor(event.data);
+        }
+
+        document.addEventListener('scroll', function (e) {
+            lastKnownScrollPosition = window.scrollY;
+            if (player != undefined) {
+                player.pauseVideo();
+            }
+        });
+
+        var box = document.querySelector('.videoWrapper');
+        var bounding = box.getBoundingClientRect();
+        //console.log(bounding);
+        var isInViewport = function (elem) {
+            var bounding = elem.getBoundingClientRect();
+            return (
+                bounding.top >= 0 &&
+                bounding.left >= 0 &&
+                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+
+        document.addEventListener('scroll', function (e) {
+            if (isInViewport(box)) {
+                if (player != undefined) {
+                    // player.playVideo();
+                }
+            }
+            else {
+                if (player != undefined) {
+                    player.pauseVideo();
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
